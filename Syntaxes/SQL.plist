@@ -30,19 +30,19 @@
 					<key>name</key>
 					<string>keyword.other.create.sql</string>
 				</dict>
-				<key>2</key>
+				<key>3</key>
 				<dict>
 					<key>name</key>
 					<string>keyword.other.sql</string>
 				</dict>
-				<key>5</key>
+				<key>6</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.function.sql</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i:^\s*(create)\s+(aggregate|conversion|database|domain|function|group|(unique\s+)?index|language|operator class|operator|rule|schema|sequence|table|tablespace|trigger|type|user|view)\s+)(['"`]?)(\w+)\4</string>
+			<string>(?i:^\s*(create(\s+or\s+replace)?)\s+(aggregate|conversion|database|domain|function|group|(unique\s+)?index|language|operator class|operator|rule|schema|sequence|table|tablespace|trigger|type|user|view)\s+)(['"`]?)(\w+)\5</string>
 			<key>name</key>
 			<string>meta.create.sql</string>
 		</dict>
